@@ -20,13 +20,14 @@ if (isset($_GET['u'])) {
 
 	$url = '';
 	switch($p) {
-	case 'w': $url = "http://wiki.mabinogiworld.com/?curid=$id36$args"; break;
+	case 'w': $url = "http://wiki.mabi.world/?curid=$id36$args"; break;
 	case 'T':
 		if($arg36) $args = "&p=$arg36#post$arg36";
 		$url = "http://archive.mabi.world/showthread.php?$id36$args";
 		break;
 	case 'F': $url = "http://archive.mabi.world/forumdisplay.php?$id$args"; break;
-	case 'C': $url = "http://mabinogi.nexon.net/Community/forums#%2Fshowthread.php%3F$id36"; break;
+	//case 'C': $url = "http://mabinogi.nexon.net/Community/forums#%2Fshowthread.php%3F$id36"; break;
+	case 'C': $url = "http://forums.mabinogi.nexon.net/discussion/$id36"; break;
 	case 'N':
 		if($arg36) $qargs = "?p=$arg36#post$arg36";
 		$url = "http://mabination.com/threads/$id36$qargs";

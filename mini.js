@@ -81,7 +81,8 @@ function isMWW(link) {
 
 function isNexonThread(link) {
 	// 1 thread ID
-	return link.match(/mabinogi.nexon.net\/Community\/forums#%2Fshowthread.php%3F([0-9]+)/);
+	//return link.match(/mabinogi.nexon.net\/Community\/forums#%2Fshowthread.php%3F([0-9]+)/);
+	return link.match(/forums.mabinogi.nexon.net\/discussion\/([0-9]+)(\/.*)?/);
 }
 
 function isNationThread(link) {
@@ -89,7 +90,7 @@ function isNationThread(link) {
 	// 2 thread ID
 	// 3 post anchor if it was given
 	// 4 post ID if anchor was given
-	return link.match(/mabination\.com\/(threads\/|showthread\.php\?p=)([0-9]+)[^#]*(#post([0-9]+))?/)
+	return link.match(/mabination\.com\/(threads\/|showthread\.php\?p=)([0-9]+)[^#]*(#post([0-9]+))?/);
 }
 
 /////////////////////////////// Minifiers ///////////////////////////////
